@@ -1,0 +1,23 @@
+
+
+string reverseWord(string str){
+    // solution no.1
+        // string st="";
+        // for(int i=str.size()-1;i>=0;i--)
+        // {
+        //     st+=str[i];
+        // }
+        // return st;
+        
+    // solution no.2 
+        // reverse(str.begin(),str.end());
+        // return str;
+    
+    // solution no.3
+        int n=str.size();
+        for(int i=0;i<n/2;i++)
+        {
+            swap(str[i],str[n-i-1]);
+        }
+        return str;
+}
